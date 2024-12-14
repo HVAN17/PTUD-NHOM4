@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Nhom 3">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <!--Hiển thị logo của trang web theo định dạng trong class header-mobile-inner,
+                    logo được lấy từ ảnh theo đường link images/logo/logo-2.png với từ thay thế
+                    là Wristluxe và khi người dùng click vào ảnh sẽ chuyển hướng đến trang chủ
+                    của website cửa hàng-->
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.php">
+                            <img src="images/logo/logo-2.png" alt="Cocoon" />
+                        </a>
+                        <!--Đây là nút để hiển thị một menu điều hướng khi người dùng click chuột vào-->
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Menu được mở ra khi click vào nút 3 gạch trong giao diện desktop-->
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <!--Chỉ định class cho phần menu điều hướng trên thiết bị di động, bao gồm class về định dạng
+                    và loại bỏ các gạch đầu dòng mặc định của danh sách (list-unstyled)-->
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="index.php">
+                                <!--Hiển thị icon fa-home từ thư viện fas và một
+                            mục Dashboard trong menu, tương tự với các mục phía dưới,
+                            tùy theo tên danh mục sẽ lựa chọnicon phù hợp-->
+                                <i class="fas fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.php">
+                                <i class="fas fa-cubes"></i>Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catagory.html">
+                                <i class="fas fa-tags"></i>Danh mục
+                            </a>
+                        </li>
+                        <li>
+                            <a href="saleprog.html">
+                                <i class="fas fa-percent"></i>Chương trình khuyến mãi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Order.php">
+                                <i class="fas fa-shopping-cart"></i>Đơn hàng
+                            </a>
+                        </li>
+                        <li>
+                            <a href="test.php">
+                                <i class="fas fa-shopping-cart"></i>Quản lí tồn kho
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+        <!-- MENU SIDEBAR-->
+        <!--Logo và thanh menu bên phải đối với màn hình desktop, nội dung của menu tương tự
+            như của mobile nhưng thay đổi class để menu được hiển thị một cách phù hợp-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <!--Hiển thị logo-->
+            <div class="logo">
+                <a href="index.php">
+                    <img src="images/logo/logo-2.png" alt="Cocoon" />
+                </a>
+            </div>
+            <!--Hiển thị menu-->
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="index.php">
+                                <i class="fas fa-home"></i>Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="products.php">
+                                <i class="fas fa-cubes"></i>Sản phẩm
+                            </a>
+                        </li>
+                        <li>
+                            <a href="catagory.html">
+                                <i class="fas fa-tags"></i>Danh mục
+                            </a>
+                        </li>
+                        <li>
+                            <a href="saleprog.html">
+                                <i class="fas fa-percent"></i>Chương trình khuyến mãi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Order.php">
+                                <i class="fas fa-shopping-cart"></i>Đơn hàng
+                            </a>
+                        </li><li>
+                            <a href="test.php">
+                                <i class="fas fa-shopping-cart"></i>Quản lí tồn kho
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+        <!-- PAGE CONTAINER-->
+
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <div class="header-button">
+                                <div class="noti-wrap"></div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <!--Hiển thị ảnh avatar admin trên thanh header-->
+                                        <div class="image">
+                                            <img src="images/icon/avatar-01.jpg" alt="Thanh Trúc" />
+                                        </div>
+                                        <!--Hiển thị tên admin trên thanh header-->
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#">Thanh Trúc</a>
+                                        </div>
+                                        <!--Dropdown xuất hiện khi nhấn vào ảnh hoặc tên admin, những nội dung trong
+                                            thẻ này chỉ xuất hiện khi nhấn vào tài khoản admin trên thanh header-->
+                                        <div class="account-dropdown js-dropdown">
+                                            <!--Định dạng cách hiển thị ảnh avatar và tên admin và email theo class được chỉnh định-->
+                                            <div class="info clearfix">
+                                                <!--Hiển thị ảnh avatar admin-->
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="images/icon/avatar-01.jpg" alt="Thanh Trúc" />
+                                                    </a>
+                                                </div>
+                                                <!--Tên và email của tài khoản admin-->
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#">Thanh Trúc</a>
+                                                    </h5>
+                                                    <span class="email">thanhtruc@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <!-- Những tính năng có để quản lý tài khoản admin bao gồm tài khoản, cài đặt, 
+                                                thanh toán và Đăng xuất-->
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Tài khoản
+                                                    </a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-settings"></i>Cài đặt
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="logout.php">
+                                                    <i class="zmdi zmdi-power"></i>Đăng xuất
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+            <!-- MAIN CONTENT-->
+
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--Hiển thị tiêu đề tổng quan và nút thêm mục và chỉ định các class
+            cho phần tử này để chúng được hiển thị như mong muốn-->
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Tổng quan</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Hiển thị số liệu thống kê về số nội dung trên website -->
+                        <!--Mỗi nội dung sẽ được hiển thị trong một khung, trong đó khung đó sẽ
+                            bao gồm một icon thể hiện nội dung, tên nội dung, số liệu và biểu đồ thể hiện -->
+
+                        <!--Hiển thị khung số liệu số người đã đăng ký-->
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>1,068</h2>
+                                                <span>Số người đã đăng ký</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Hiển thị khung số liệu số sản phẩm được thêm vào giỏ hàng-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-shopping-cart"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>5,123</h2>
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Hiển thị khung số liệu số đơn hàng đã hoàn tất-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-calendar-note"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>1,086</h2>
+                                                <span>Đơn hàng đã hoàn tất</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Hiển thị khung số liệu Tổng doanh thu-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-money"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>55,000,000</h2>
+                                                <span>Tổng doanh thu</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Đơn hàng</h3>
+                                        <canvas id="doughutChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Người đăng ký mới</h3>
+                                        <canvas id="singelBarChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="au-card m-b-30">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 m-b-40">Doanh thu</h3>
+                                        <canvas id="team-chart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+                        <div class="row">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- DATA TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <!--Tên của bảng là sản phẩm bán chạy-->
+                                    <div class="title-1">Sản phẩm bán chạy</div>
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <!--Hàng thể hiện tiêu đề của bảng-->
+                                            <tr>
+                                                <th>Ảnh</th>
+                                                <th>Mã</th>
+                                                <th>Danh mục</th>
+                                                <th>Tên</th>
+                                                <th>Tồn kho</th>
+                                                <th>Đã bán</th>
+                                                <th>Giá</th>
+                                                <th>Hành động</th>
+                                            </tr>
+                                        </thead>
+                                        <!-- Phần thân của bảng, chứa các hàng dữ liệu -->
+                                        <tbody>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/FGW01008W0.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123456</td>
+                                                <td>Đồng hồ nam</td>
+                                                <td>Orient FGW01008W0</td>
+                                                <td>5</td>
+                                                <td>30</td>
+                                                <td>4.520.000</td>
+                                                <td>
+                                                    <!--nút xem trong cột hành động, cho phép người dùng có thể truy cập đến trang tương ứng
+                                                        khi nhấn vào nút-->
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/55_MSG-S500G-1ADR.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123457</td>
+                                                <td>Đồng hồ nữ</td>
+                                                <td>Baby-G MSG-S500G-1ADR</td>
+                                                <td>6</td>
+                                                <td>27</td>
+                                                <td>6.490.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/SKW6818.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123458</td>
+                                                <td>Đồng hô nam</td>
+                                                <td>Skagen SKW6818</td>
+                                                <td>4</td>
+                                                <td>25</td>
+                                                <td>5.150.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/71931-SVWHSV-2.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123459</td>
+                                                <td>Đồng hồ nữ</td>
+                                                <td>Saga 71931-SVWHSV-2</td>
+                                                <td>8</td>
+                                                <td>23</td>
+                                                <td>4.930.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/LTP-V300L-4AUDF-1.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123460</td>
+                                                <td>Đồng hồ nữ</td>
+                                                <td>Casio LTP-V300L-4AUDFy</td>
+                                                <td>6</td>
+                                                <td>20</td>
+                                                <td>1.607.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://i.pinimg.com/564x/56/e7/c4/56e7c420d55902db03a64e0554ef1d21.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123461</td>
+                                                <td>Đồng hồ đôi</td>
+                                                <td>Calvin Klein Đôi–Quartz</td>
+                                                <td>3</td>
+                                                <td>17</td>
+                                                <td>7.800.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://i.pinimg.com/564x/43/6b/ea/436bea577e698ca1091943962aa77f76.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123462</td>
+                                                <td>Đồng hồ đôi</td>
+                                                <td> Citizen Đôi–Kính Sapphire</td>
+                                                <td>6</td>
+                                                <td>15</td>
+                                                <td>14.000.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- Một hàng nội dung trong bảng -->
+                                            <tr>
+                                                <td><img src="https://image.donghohaitrieu.com/wp-content/uploads/2023/09/EM0509-87E.jpg" 
+                                                         alt="Hình ảnh sản phẩm" class="product-image" /></td>
+                                                <td>WR123463</td>
+                                                <td>Đồng hồ nữ</td>
+                                                <td>Citizen EM0509-87E</td>
+                                                <td>7</td>
+                                                <td>14</td>
+                                                <td>6.850.000</td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" title="Xem" onclick="window.location.href='viewproduct.html';">
+                                                            <i class="zmdi zmdi-eye"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE                  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js"></script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
